@@ -11,6 +11,9 @@ import cyndaquil from '../assets/cyndaquil.png'
 import filterIcon from '../assets/filter-icon.png'
 import bushIcon from '../assets/bush-icon.png'
 
+
+import imgExemple from '../assets/arcanine.png' // Delete after
+
 const currentPokemon = {
     bulbasaur,
     charmander,
@@ -25,7 +28,8 @@ const images = {
     pokeball,
     currentPokemon,
     bushIcon,
-    filterIcon
+    filterIcon,
+    imgExemple
 }
 
 export default images

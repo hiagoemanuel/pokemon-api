@@ -2,8 +2,18 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Overpass', sans-serif;
+    font-family: 'VT323', monospace;
+}
+
+html {
+    font-size: 62.5%;
 }
 
 li {
     list-style: none;
+}
+
+:root {
+    --max-width: 1440px;
 }

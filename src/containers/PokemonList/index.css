@@ -1,0 +1,15 @@
+main {
+    max-width: var(--max-width);
+    margin: 0 auto;
+    padding: 0 10px;
+}
+.generic-phrase {
+    margin-bottom: 40px;
+
+    text-align: center;
+    font-size: 1.8rem;
+}
+.cards__title {
+    font-size: 6.4rem;
+    margin-bottom: 25px;
+}

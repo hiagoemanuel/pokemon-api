@@ -1,12 +1,13 @@
 import { Header } from './containers/Header'
-
+import { PokemonList } from './containers/PokemonList'
 
 import './App.css'
 
 function App() {
   return (
     <>
-    <Header />
+      <Header />
+      <PokemonList />
     </>
   );
 }
