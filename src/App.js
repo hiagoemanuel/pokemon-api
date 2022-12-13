@@ -1,6 +1,12 @@
+import { Header } from './containers/Header'
+
+
+import './App.css'
+
 function App() {
   return (
     <>
+    <Header />
     </>
   );
 }
