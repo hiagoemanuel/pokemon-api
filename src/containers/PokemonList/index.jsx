@@ -1,6 +1,6 @@
 import { PokemonCardsList } from '../../components/PokemonCardsList'
-
 import './index.css'
+
 
 function PokemonList() {
     return (
@@ -9,6 +9,9 @@ function PokemonList() {
             <h1 className='cards__title'>Pokémons</h1>
             <div className='cards'>
                 <PokemonCardsList />
+            </div>
+            <div className='button-container'>
+            <button className='cards__button'>Carregar mais</button>
             </div>
         </main>
     )
