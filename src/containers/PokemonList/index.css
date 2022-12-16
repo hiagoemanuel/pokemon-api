@@ -13,6 +13,15 @@ main {
     font-size: 6.4rem;
     margin-bottom: 25px;
 }
+.cards {
+    max-width: 1205px;
+    margin: 0 auto;
+
+    display: grid;
+    gap: 20px;
+    grid-template-columns: repeat(auto-fit, 225px);
+    justify-content: center;
+}
 .cards__button {
     padding: 15px 40px;
     border: 5px solid yellow;

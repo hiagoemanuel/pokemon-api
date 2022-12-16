@@ -6,9 +6,12 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+
+    cursor: pointer;
 }
 .card__img {
     width: 100%;
+    pointer-events: none;
 }
 .card__name {
     width: 100%;
