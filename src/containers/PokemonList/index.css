@@ -32,7 +32,7 @@ main {
     font-size: 2.4rem;
 }
 .button-container {
-    margin-top: 40px;
+    margin: 40px 0px;
 
     display: flex;
     justify-content: center;

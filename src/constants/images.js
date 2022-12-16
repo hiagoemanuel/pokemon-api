@@ -11,8 +11,8 @@ import cyndaquil from '../assets/cyndaquil.png'
 import filterIcon from '../assets/filter-icon.png'
 import bushIcon from '../assets/bush-icon.png'
 
-
-import imgExemple from '../assets/arcanine.png' // Delete after
+import gitHubIcon from '../assets/git-hub-icon.svg'
+import linkedinIcon from '../assets/linkedin-icon.svg'
 
 const currentPokemon = {
     bulbasaur,
@@ -20,7 +20,7 @@ const currentPokemon = {
     squirtle,
     ekans,
     pikachu,
-    cyndaquil
+    cyndaquil,
 }
 
 const images = {
@@ -29,7 +29,8 @@ const images = {
     currentPokemon,
     bushIcon,
     filterIcon,
-    imgExemple
+    gitHubIcon,
+    linkedinIcon
 }
 
 export default images

@@ -11,7 +11,7 @@ function PokemonList() {
                 <PokemonCardsList />
             </div>
             <div className='button-container'>
-            <button className='cards__button'>Carregar mais</button>
+                <button className='cards__button'>Carregar mais</button>
             </div>
         </main>
     )
