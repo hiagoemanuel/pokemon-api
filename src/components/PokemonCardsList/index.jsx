@@ -1,25 +1,21 @@
-import { useEffect, useState } from 'react'
+import { useEffect, useContext } from 'react'
+import { CardsListContext } from '../../contexts/context-cards-list'
 
-import { pokemonData } from '../../constants/poke-api'
+import { pokemonData } from '../../services/setPokemonData'
+import { attributedCards } from '../../constants/attributed-cards'
 
 import './index.css'
 
 function PokemonCardsList() {
-    const [pokemonCard, setPokemonCard] = useState([])
+    const { pokemonCard, setPokemonCard } = useContext(CardsListContext)
+    
     useEffect(() => {
-        const fetchData = async () => {
-            let data = await Promise.all(await pokemonData())
-
-            data = data.map(data => ({
-                name: data.name.replace('-', ' '),
-                id: data.id.toString().padStart(3, '0'),
-                image: data.sprites.front_default
-            }))
-
-            setPokemonCard([...data])
+        async function fetchData() {
+            const data = await Promise.all(await pokemonData())
+            setPokemonCard([...attributedCards(data)])
         }
         fetchData()
-    }, [])
+    }, [setPokemonCard])
 
     return (
         pokemonCard.map((data, index) => (

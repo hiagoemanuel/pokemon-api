@@ -1,0 +1,19 @@
+.button-container {
+    margin: 40px 0px;
+
+    display: flex;
+    justify-content: center;
+}
+.cards__button {
+    padding: 15px 40px;
+    border: 5px solid yellow;
+
+    outline: none;
+    cursor: pointer;
+    background-color: transparent;
+
+    font-size: 2.4rem;
+}
+.cards__button:hover {
+    background-color: yellow;
+}

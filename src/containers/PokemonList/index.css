@@ -22,21 +22,3 @@ main {
     grid-template-columns: repeat(auto-fit, 225px);
     justify-content: center;
 }
-.cards__button {
-    padding: 15px 40px;
-    border: 5px solid yellow;
-
-    background-color: transparent;
-    cursor: pointer;
-
-    font-size: 2.4rem;
-}
-.button-container {
-    margin: 40px 0px;
-
-    display: flex;
-    justify-content: center;
-}
-.cards__button:hover {
-    background-color: yellow;
-}

@@ -1,4 +1,5 @@
 import './index.css'
+
 import images from '../../constants/images'
 
 function Footer() {

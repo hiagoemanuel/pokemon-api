@@ -1,18 +1,21 @@
-import { PokemonCardsList } from '../../components/PokemonCardsList'
-import './index.css'
+import { CardsProvider } from '../../contexts/context-cards-list'
 
+import { PokemonCardsList } from '../../components/PokemonCardsList'
+import { ButtonLoadMore } from '../../components/ButtonLoadMore'
+
+import './index.css'
 
 function PokemonList() {
     return (
         <main>
             <h2 className="generic-phrase">Saiba mais sobre os movimentos e habilidades dos pokémons aqui ;D</h2>
             <h1 className='cards__title'>Pokémons</h1>
-            <div className='cards'>
-                <PokemonCardsList />
-            </div>
-            <div className='button-container'>
-                <button className='cards__button'>Carregar mais</button>
-            </div>
+            <CardsProvider>
+                <div className='cards'>
+                    <PokemonCardsList />
+                </div>
+                <ButtonLoadMore />
+            </CardsProvider>
         </main>
     )
 }
