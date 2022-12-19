@@ -11,6 +11,8 @@ import cyndaquil from '../assets/cyndaquil.png'
 import filterIcon from '../assets/filter-icon.png'
 import bushIcon from '../assets/bush-icon.png'
 
+import arrowUpIcon from '../assets/arrow-up-icon.svg'
+
 import gitHubIcon from '../assets/git-hub-icon.svg'
 import linkedinIcon from '../assets/linkedin-icon.svg'
 
@@ -29,6 +31,7 @@ const images = {
     currentPokemon,
     bushIcon,
     filterIcon,
+    arrowUpIcon,
     gitHubIcon,
     linkedinIcon
 }

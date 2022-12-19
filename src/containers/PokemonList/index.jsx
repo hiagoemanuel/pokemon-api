@@ -2,6 +2,7 @@ import { CardsProvider } from '../../contexts/context-cards-list'
 
 import { PokemonCardsList } from '../../components/PokemonCardsList'
 import { ButtonLoadMore } from '../../components/ButtonLoadMore'
+import { ToTopButton } from '../../components/ToTopButton'
 
 import './index.css'
 
@@ -16,6 +17,7 @@ function PokemonList() {
                 </div>
                 <ButtonLoadMore />
             </CardsProvider>
+            <ToTopButton />
         </main>
     )
 }

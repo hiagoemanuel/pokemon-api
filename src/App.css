@@ -6,12 +6,17 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    scroll-behavior: smooth;
     font-family: 'Overpass', sans-serif;
     font-family: 'VT323', monospace;
 }
 
 html {
     font-size: 62.5%;
+}
+
+#root {
+    position: relative;
 }
 
 li {

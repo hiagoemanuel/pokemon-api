@@ -16,7 +16,6 @@ function ButtonLoadMore() {
             <button className='cards__button'
                 onClick={async () => {
                     offSet += 10
-                    console.log(offSet);
                     const data = await Promise.all(await pokemonData(offSet))
                     setPokemonCard([...pokemonCard, ...attributedCards(data)])
                 }}>
