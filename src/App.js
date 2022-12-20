@@ -1,5 +1,5 @@
 import { Header } from './containers/Header'
-import { PokemonList } from './containers/PokemonList'
+import { AppRoutes } from './pages/router'
 import { Footer } from './containers/Footer'
 
 import './App.css'
@@ -8,7 +8,7 @@ function App() {
   return (
     <>
       <Header />
-      <PokemonList />
+      <AppRoutes />
       <Footer />
     </>
   );

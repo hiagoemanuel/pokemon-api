@@ -3,7 +3,7 @@ function toTop() {
     
     if (window.pageYOffset >= 500) {
         button.style.display = 'flex'
-    } else {
+    } else if (button) {
         button.style.display = 'none'
     }
 
