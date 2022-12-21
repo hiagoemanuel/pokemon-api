@@ -1,5 +1,5 @@
 function toTop() {
-    const button = document.getElementsByClassName('to-top')[0]
+    const button = document.getElementById('to-top')
     
     if (window.pageYOffset >= 500) {
         button.style.display = 'flex'

@@ -1,27 +1,27 @@
 import { useContext } from 'react'
-import { CardsListContext } from '../../contexts/context-cards-list'
+import { CardsListContext } from '../../contexts/pokemons-card'
 
 import { attributedCards } from '../../constants/attributed-cards'
-import { pokemonData } from '../../services/setPokemonData'
+import { setPokemonData } from '../../services/setPokemonData'
 
-import './index.css'
+import { Container, Button } from './style'
 
 let offSet = 0
 
 function ButtonLoadMore() {
     const { pokemonCard, setPokemonCard } = useContext(CardsListContext)
-    
+
     return (
-        <div className='button-container'>
-            <button className='cards__button'
+        <Container className='button-container'>
+            <Button
                 onClick={async () => {
                     offSet += 10
-                    const data = await Promise.all(await pokemonData(offSet))
+                    const data = await Promise.all(await setPokemonData(offSet))
                     setPokemonCard([...pokemonCard, ...attributedCards(data)])
                 }}>
                 Carregar mais
-            </button>
-        </div>
+            </Button>
+        </Container>
     )
 }
 

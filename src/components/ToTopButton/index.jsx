@@ -1,15 +1,15 @@
-import { toTop } from '../../services/toTop'
+import { toTop } from './services/toTop'
 
 import images from '../../constants/images'
-import './index.css'
+import { Button } from './style'
 
 window.addEventListener('scroll', () => toTop())
 
 function ToTopButton() {
     return (
-        <a className='to-top' href="#root" style={{ display: 'none' }}>
+        <Button id="to-top" href="#root" style={{ display: 'none' }}>
             <img src={images.arrowUpIcon} alt="to-top" />
-        </a>
+        </Button>
     )
 }
 

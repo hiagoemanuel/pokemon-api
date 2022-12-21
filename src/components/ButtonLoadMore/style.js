@@ -1,10 +1,12 @@
-.button-container {
-    margin: 40px 0px;
+import styled from 'styled-components'
 
+export const Container = styled.div`
+    margin: 40px 0px;
     display: flex;
     justify-content: center;
-}
-.cards__button {
+`
+
+export const Button = styled.button`
     padding: 15px 40px;
     border: 5px solid yellow;
 
@@ -13,7 +15,8 @@
     background-color: transparent;
 
     font-size: 2.4rem;
-}
-.cards__button:hover {
+
+    &:hover {
     background-color: yellow;
-}
+    }
+`

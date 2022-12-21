@@ -1,4 +1,6 @@
-.to-top {
+import styled from 'styled-components'
+
+export const Button = styled.a`
     width: 100px;
     height: 100px;
 
@@ -13,18 +15,19 @@
     cursor: pointer;
     opacity: 50%;
     background-color: yellow;
-}
-.to-top:hover {
-    opacity: 100%;
-}
-@media (max-width: 490px) {
-    .to-top {
+
+    &:hover {
+        opacity: 100%;
+    }
+
+    @media (max-width: 490px) {
         width: 50px;
         height: 50px;
 
         top: 40px;
+
+        img {
+            width: 70%;
+        }
     }
-    .to-top img {
-        width: 70%;
-    }
-}
+`

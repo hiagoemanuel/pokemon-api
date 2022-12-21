@@ -1,24 +1,24 @@
-import { CardsProvider } from '../../contexts/context-cards-list'
+import { CardsProvider } from '../../contexts/pokemons-card'
 
 import { PokemonCardsList } from '../../components/PokemonCardsList'
 import { ButtonLoadMore } from '../../components/ButtonLoadMore'
 import { ToTopButton } from '../../components/ToTopButton'
 
-import './index.css'
+import { Cards, MainStyle, Phrase, Title } from './style'
 
 function PokemonList() {
     return (
-        <main>
-            <h2 className="generic-phrase">Saiba mais sobre os movimentos e habilidades dos pokémons aqui ;D</h2>
-            <h1 className='cards__title'>Pokémons</h1>
+        <MainStyle>
+            <Phrase>Saiba mais sobre os movimentos e habilidades dos pokémons aqui ;D</Phrase>
+            <Title>Pokémons</Title>
             <CardsProvider>
-                <div className='cards'>
+                <Cards>
                     <PokemonCardsList />
-                </div>
+                </Cards>
                 <ButtonLoadMore />
             </CardsProvider>
             <ToTopButton />
-        </main>
+        </MainStyle>
     )
 }
 

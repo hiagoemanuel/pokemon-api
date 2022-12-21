@@ -1,4 +1,6 @@
-.card {
+import styled from "styled-components";
+
+export const Card = styled.article`
     width: 225px;
     height: 325px;
     border: 5px solid yellow;
@@ -8,12 +10,14 @@
     justify-content: space-between;
 
     cursor: pointer;
-}
-.card__img {
+`
+
+export const Image = styled.img`
     width: 100%;
     pointer-events: none;
-}
-.card__name {
+`
+
+export const Name = styled.footer`
     width: 100%;
     padding: 17px 10px;
     border-top: 5px solid yellow;
@@ -22,4 +26,4 @@
     justify-content: space-between;
 
     font-size: 2.4rem;
-}
+`

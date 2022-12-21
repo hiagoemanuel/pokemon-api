@@ -1,19 +1,25 @@
-main {
+import styled from 'styled-components'
+
+export const MainStyle = styled.main`
     max-width: var(--max-width);
     margin: 0 auto;
     padding: 0 10px;
-}
-.generic-phrase {
+`
+
+export const Phrase = styled.span`
+    display: block;
     margin-bottom: 40px;
 
     text-align: center;
-    font-size: 1.8rem;
-}
-.cards__title {
+    font-size: 2.4rem;
+`
+
+export const Title = styled.h1`
     font-size: 6.4rem;
     margin-bottom: 25px;
-}
-.cards {
+`
+
+export const Cards = styled.div`
     max-width: 1205px;
     margin: 0 auto;
 
@@ -21,4 +27,4 @@ main {
     gap: 20px;
     grid-template-columns: repeat(auto-fit, 225px);
     justify-content: center;
-}
+`
