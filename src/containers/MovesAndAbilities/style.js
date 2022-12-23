@@ -35,3 +35,12 @@ export const Card = styled.div`
         text-align: center;
     }
 `
+
+export const ContainerContent = styled.section`
+    margin-top: 50px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+`

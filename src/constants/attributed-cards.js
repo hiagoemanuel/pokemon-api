@@ -6,11 +6,11 @@ function attributedCards(datas) {
         urlId: data.id,
         image: data.sprites.front_default,
         type: data.types.map(item => item.type.name),
-        moves: data.moves.map(item => item.move.name),
+        movesName: data.moves.map(item => item.move.name),
         abilities: data.abilities.map((item) => {
             return {
                 name: item.ability.name,
-                discription: item.ability.url
+                urlDiscription: item.ability.url
             }
         })
     }))

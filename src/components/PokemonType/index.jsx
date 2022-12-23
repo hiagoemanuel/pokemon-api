@@ -1,12 +1,10 @@
 import { TypeList } from "./style"
 
 function PokemonType({ typeList }) {
-
+    if (!typeList) return
     return (
         <TypeList>
-            {
-                typeList ? typeList.map((type, index) => <li key={index}>{type}</li>) : []
-            }
+            {typeList.map((type, index) => <li key={index}>{type}</li>)}
         </TypeList>
     )
 }

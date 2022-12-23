@@ -2,9 +2,13 @@ import { useEffect, useState } from 'react'
 import { Link, useParams } from 'react-router-dom'
 import { getPokemonInfo } from '../../services/getPokemonInfo'
 import { attributedCards } from '../../constants/attributed-cards'
-import { PokemonType } from '../../components/PokemonType'
 
-import { MainStyle, ContainerCard, Card } from './style'
+import { PokemonType } from '../../components/PokemonType'
+import { AbilitiesList } from '../../components/AbilitiesList'
+import { MovesList } from '../../components/MovesList'
+import { ToTopButton } from '../../components/ToTopButton'
+
+import { MainStyle, ContainerCard, Card, ContainerContent } from './style'
 
 function MovesAndAbilities() {
     const { id } = useParams()
@@ -17,7 +21,6 @@ function MovesAndAbilities() {
         }
         fetchData()
     }, [id])
-    console.log(pokemonInfo)
     return (
         <MainStyle>
             <Link to='/' className='to-home'>{'< Voltar'}</Link>
@@ -28,6 +31,11 @@ function MovesAndAbilities() {
                     <PokemonType typeList={pokemonInfo.type} />
                 </Card>
             </ContainerCard>
+            <ContainerContent>
+                <AbilitiesList abilities={pokemonInfo.abilities} />
+                <MovesList moves={pokemonInfo.movesName} />
+            </ContainerContent>
+            <ToTopButton />
         </MainStyle>
     )
 }
