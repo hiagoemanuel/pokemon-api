@@ -1,8 +1,8 @@
 import { useEffect, useState } from 'react'
+import { getDiscriptionAbility } from '../../../../services/getDiscriptionAbility'
 
-import { getDiscriptionAbility } from '../../services/getDiscriptionAbility';
-
-import { Ability, AbilityDetails, ContainerTitle } from './style'
+import { Ability, AbilityDetails } from './style'
+import { MainTitle } from '../../../../styles/components-style'
 
 function AbilitiesList({ abilities }) {
     const [ability, setAbility] = useState([])
@@ -21,11 +21,11 @@ function AbilitiesList({ abilities }) {
             setAbility(data)
         }
         fetchData()
-    }, [])
+    }, [abilities])
 
     return (
         <Ability>
-            <ContainerTitle><h1>Habilidades</h1></ContainerTitle>
+            <MainTitle><h1>Habilidades</h1></MainTitle>
             {
                 ability.map((ability, index) => (
                     <AbilityDetails key={index}>

@@ -3,9 +3,9 @@ import { Link, useParams } from 'react-router-dom'
 import { getPokemonInfo } from '../../services/getPokemonInfo'
 import { attributedCards } from '../../constants/attributed-cards'
 
-import { PokemonType } from '../../components/PokemonType'
-import { AbilitiesList } from '../../components/AbilitiesList'
-import { MovesList } from '../../components/MovesList'
+import { PokemonType } from './components/PokemonType'
+import { AbilitiesList } from './components/AbilitiesList'
+import { MovesList } from './components/MovesList'
 import { ToTopButton } from '../../components/ToTopButton'
 
 import { MainStyle, ContainerCard, Card, ContainerContent } from './style'

@@ -1,7 +1,7 @@
 import { CardsProvider } from '../../contexts/pokemons-card'
 
-import { PokemonCardsList } from '../../components/PokemonCardsList'
-import { ButtonLoadMore } from '../../components/ButtonLoadMore'
+import { PokemonCardsList } from './components/PokemonCardsList'
+import { ButtonLoadMore } from './components/ButtonLoadMore'
 import { ToTopButton } from '../../components/ToTopButton'
 
 import { Cards, MainStyle, Phrase, Title } from './style'

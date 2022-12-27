@@ -1,12 +1,12 @@
 import { ContainerContent, Moves } from './style'
-import { ContainerTitle } from '../AbilitiesList/style'
+import { MainTitle } from '../../../../styles/components-style'
 
 function MovesList({ moves }) {
     if (!moves) return
 
     return (
         <Moves>
-            <ContainerTitle><h1>Movimentos</h1></ContainerTitle>
+            <MainTitle><h1>Movimentos</h1></MainTitle>
             <ContainerContent>
                 {
                     moves.map((move, index) => {

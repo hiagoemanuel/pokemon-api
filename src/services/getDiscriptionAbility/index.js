@@ -5,9 +5,11 @@ async function getDiscriptionAbility(url) {
     const discription = data.effect_entries.filter(item => {
         if (item.language.name === 'en') {
             return item.effect
+        } else {
+            return null
         }
     })
-    
+
     return discription[0].effect
 }
 

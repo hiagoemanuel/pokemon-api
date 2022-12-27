@@ -1,6 +1,9 @@
 import logo from '../assets/pokemon-logo.png'
 import pokeball from '../assets/pokeball-pixelart.ico'
 
+import lightMode from '../assets/light-mode-icon.svg'
+import darkMode from '../assets/dark-mode-icon.svg'
+
 import bulbasaur from '../assets/bulbasaur.png'
 import charmander from '../assets/charmander.png'
 import squirtle from '../assets/squirtle.png'
@@ -16,18 +19,20 @@ import arrowUpIcon from '../assets/arrow-up-icon.svg'
 import gitHubIcon from '../assets/git-hub-icon.svg'
 import linkedinIcon from '../assets/linkedin-icon.svg'
 
-const currentPokemon = {
+const currentPokemon = [
     bulbasaur,
     charmander,
     squirtle,
     ekans,
     pikachu,
     cyndaquil,
-}
+]
 
 const images = {
     logo,
     pokeball,
+    lightMode,
+    darkMode,
     currentPokemon,
     bushIcon,
     filterIcon,

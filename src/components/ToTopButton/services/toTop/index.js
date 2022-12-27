@@ -6,7 +6,6 @@ function toTop() {
     } else if (button) {
         button.style.display = 'none'
     }
-
 }
 
 export { toTop }

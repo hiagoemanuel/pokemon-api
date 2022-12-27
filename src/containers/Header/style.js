@@ -33,7 +33,7 @@ export const Menu = styled.ul`
 `
 
 export const MenuItem = styled.li`
-    img {
+    .icon {
         width: 25px;
         cursor: pointer;
 

@@ -1,9 +1,8 @@
-import { Link } from 'react-router-dom'
 import { useEffect, useContext } from 'react'
-import { CardsListContext } from '../../contexts/pokemons-card'
-
-import { setPokemonData } from '../../services/setPokemonData'
-import { attributedCards } from '../../constants/attributed-cards'
+import { Link } from 'react-router-dom'
+import { setPokemonData } from '../../../../services/setPokemonData'
+import { attributedCards } from '../../../../constants/attributed-cards'
+import { CardsListContext } from '../../../../contexts/pokemons-card'
 
 import { Card, Image, Name } from './style'
 

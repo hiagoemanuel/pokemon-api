@@ -1,8 +1,7 @@
 import { useContext } from 'react'
-import { CardsListContext } from '../../contexts/pokemons-card'
-
-import { attributedCards } from '../../constants/attributed-cards'
-import { setPokemonData } from '../../services/setPokemonData'
+import { CardsListContext } from '../../../../contexts/pokemons-card'
+import { attributedCards } from '../../../../constants/attributed-cards'
+import { setPokemonData } from '../../../../services/setPokemonData'
 
 import { Container, Button } from './style'
 

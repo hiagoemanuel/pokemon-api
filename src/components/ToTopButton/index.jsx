@@ -1,6 +1,6 @@
 import { toTop } from './services/toTop'
-
 import images from '../../constants/images'
+
 import { Button } from './style'
 
 window.addEventListener('scroll', () => toTop())
