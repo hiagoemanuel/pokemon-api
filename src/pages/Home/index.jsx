@@ -1,6 +1,6 @@
-import { Header } from '../../containers/Header'
-import { PokemonList } from '../../containers/PokemonList'
-import { Footer } from '../../containers/Footer'
+import { Header } from '../../components/Header'
+import { PokemonList } from '../../components/PokemonList'
+import { Footer } from '../../components/Footer'
 
 function Home() {
     return (

@@ -5,16 +5,18 @@ export const MainTitle = styled.div`
     justify-content: center;
 
     h1 {
-        border-bottom: 5px solid yellow;
+        border-bottom: 5px solid var(--tertiary-color);
 
         font-size: 7rem;
         text-align: center;
     }
 `
+
 export const SmallTitle = styled.h5`
     font-size: 2rem;
     margin: 5px 0pc 15px 0px;
 `
+
 export const Line = styled.span`
     width: 100%;
     height: 5px;
@@ -22,5 +24,5 @@ export const Line = styled.span`
     
     display: block;
     
-    background-color: black;
+    background-color: var(--primary-color);
 `

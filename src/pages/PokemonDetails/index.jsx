@@ -1,6 +1,6 @@
-import { Header } from '../../containers/Header/'
-import { Footer } from '../../containers/Footer/'
-import { MovesAndAbilities } from '../../containers/MovesAndAbilities'
+import { Header } from '../../components/Header/'
+import { Footer } from '../../components/Footer/'
+import { MovesAndAbilities } from '../../components/MovesAndAbilities'
 
 function PokemonDetails() {
     return (

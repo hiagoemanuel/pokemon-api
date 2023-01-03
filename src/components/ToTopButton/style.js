@@ -14,7 +14,7 @@ export const Button = styled.a`
 
     cursor: pointer;
     opacity: 50%;
-    background-color: yellow;
+    background-color: var(--tertiary-color);
 
     &:hover {
         opacity: 100%;
@@ -23,11 +23,8 @@ export const Button = styled.a`
     @media (max-width: 490px) {
         width: 50px;
         height: 50px;
+        padding: 10px;
 
         top: 40px;
-
-        img {
-            width: 70%;
-        }
     }
 `
