@@ -2,19 +2,12 @@ export const themes = {
     mainTheme: {
         darkMode: {
             primary: '#ffffff',
-            secondary: '#000000'
+            secondary: '#111111'
         },
         lightMode: {
             primary: '#000000',
             secondary: '#ffffff'
         }
     },
-    pokemonTheme: {
-        bulbasaur: '#73ac31',
-        charmander: '#ff9441',
-        squirtle: '#5a9ca4',
-        ekans: '#cd64b4',
-        pikachu: '#f6e652',
-        ponyta: '#e65a29'
-    },
+    pokemonTheme: ['#73ac31', '#ff9441', '#5a9ca4', '#cd64b4', '#f6e652', '#e65a29']
 }

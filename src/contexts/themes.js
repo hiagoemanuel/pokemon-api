@@ -6,7 +6,7 @@ const ThemeContext = createContext({})
 
 function ThemeProvider({ children }) {
     const [mainTheme, setMainTheme] = useState(themes.mainTheme.lightMode)
-    const [pokemonTheme, setPokemonTheme] = useState(themes.pokemonTheme.pikachu)
+    const [pokemonTheme, setPokemonTheme] = useState(themes.pokemonTheme[4])
 
     return (
         <ThemeContext.Provider

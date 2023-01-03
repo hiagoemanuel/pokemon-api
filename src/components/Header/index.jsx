@@ -7,10 +7,10 @@ import { ThemeToggler } from './ThemeToggler'
 
 import { HeaderStyle, Container, Logo, Nav } from './style'
 
-
+export let pokemonIconHeader
 
 function Header({ notFilter }) {
-
+  pokemonIconHeader = useRef()
   const acordeon = useRef()
 
   useEffect(() => {
@@ -22,13 +22,12 @@ function Header({ notFilter }) {
       if (acordenActive) acordenActive.classList.remove('active')
     }))
   }, [])
-
   return (
     <HeaderStyle>
       <Container>
         <Logo>
           <img className='logo__img' src={images.logo} alt="logo-pokémon" />
-          <img className='logo__current-pokemon' src={images.currentPokemon[4]} alt="current-pokemon" />
+          <img className='logo__current-pokemon' src={images.currentPokemon[4]} ref={pokemonIconHeader} alt="current-pokemon" />
         </Logo>
         <Nav ref={acordeon} >
           {notFilter ? <></> : <Filter />}

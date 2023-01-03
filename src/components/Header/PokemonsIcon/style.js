@@ -8,6 +8,10 @@ export const Pokemon = styled.li`
     display: flex;
     justify-content: center;
     align-items: center;
+
+    &.activated {
+        border: 5px solid var(--primary-color)
+    }
 `
 export const Icon = styled.img`
     min-width: 100%;

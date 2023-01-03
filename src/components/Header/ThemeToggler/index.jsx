@@ -10,10 +10,13 @@ import { AcordeonContent, ContainerTheme, MainTheme, PokemonTheme } from './styl
 import { Line, SmallTitle } from '../../../styles/components-style'
 import { themes } from '../../../constants/themes'
 
+export let pokemonsIconsList
+
 function ThemeToggler() {
     const dark = useRef()
     const light = useRef()
     const { setMainTheme } = useContext(ThemeContext)
+    pokemonsIconsList = useRef()
 
     const changeMainTheme = useCallback((ref) => {
         const reference = ref.current ? ref.current.id : ref
@@ -59,7 +62,7 @@ function ThemeToggler() {
                 </MainTheme>
                 <Line />
                 <SmallTitle>Escolha Seu Pokémon!!</SmallTitle>
-                <PokemonTheme>
+                <PokemonTheme ref={pokemonsIconsList}>
                     <PokemonsIcon />
                 </PokemonTheme>
             </AcordeonContent>
