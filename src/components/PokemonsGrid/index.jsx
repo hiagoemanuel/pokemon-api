@@ -6,7 +6,7 @@ import { ButtonLoadMore } from './ButtonLoadMore'
 
 import { Cards, MainStyle, Phrase, Title } from './style'
 
-function PokemonList() {
+function PokemonsGrid() {
     return (
         <MainStyle>
             <Phrase>Saiba mais sobre os movimentos e habilidades dos pokémons aqui ;D</Phrase>
@@ -22,4 +22,4 @@ function PokemonList() {
     )
 }
 
-export { PokemonList }
+export { PokemonsGrid }

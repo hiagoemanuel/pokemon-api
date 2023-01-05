@@ -2,10 +2,10 @@ export const themes = {
     mainTheme: {
         darkMode: {
             primary: '#ffffff',
-            secondary: '#111111'
+            secondary: '#262626'
         },
         lightMode: {
-            primary: '#000000',
+            primary: '#262626',
             secondary: '#ffffff'
         }
     },

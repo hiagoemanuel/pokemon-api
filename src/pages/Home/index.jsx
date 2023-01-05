@@ -1,12 +1,12 @@
 import { Header } from '../../components/Header'
-import { PokemonList } from '../../components/PokemonList'
+import { PokemonsGrid } from '../../components/PokemonsGrid'
 import { Footer } from '../../components/Footer'
 
 function Home() {
     return (
         <>
         <Header />
-        <PokemonList />
+        <PokemonsGrid />
         <Footer />
         </>
     )

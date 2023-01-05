@@ -15,5 +15,8 @@ export const ContainerContent = styled.ul`
     
     li {
         font-size: 4.2rem;
+        @media (max-width: 340px) {
+            text-align: center;
+        }
     }
 `

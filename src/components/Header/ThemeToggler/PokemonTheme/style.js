@@ -1,5 +1,11 @@
 import styled from "styled-components";
 
+export const Theme = styled.ul`
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+`
+
 export const Pokemon = styled.li`
     width: 50px;
     height: 50px;
@@ -10,10 +16,10 @@ export const Pokemon = styled.li`
     align-items: center;
 
     &.activated {
-        border: 5px solid var(--primary-color)
+        border: 5px solid var(--primary-color);
     }
 `
 export const Icon = styled.img`
-    min-width: 100%;
+    width: 100%;
     transform: scale(1.3);
 `

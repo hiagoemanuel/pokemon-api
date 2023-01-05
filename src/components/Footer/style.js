@@ -19,9 +19,7 @@ export const Credits = styled.div`
     justify-content: center;
     align-items: center;
 
-    .credits__dev {
-        font-size: 1.8rem;
-    }
+    .credits__dev { font-size: 1.9rem; }
 `
 
 export const SocialMedias = styled.ul`
@@ -43,6 +41,8 @@ export const FooterResponsive = createGlobalStyle`
             flex-direction: column;
             gap: 20px;
             padding: 10px;
+    
+            .credits__dev { font-size: 1.7rem; }
         }
         ${SocialMedias} {
             position: relative;

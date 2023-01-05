@@ -25,6 +25,8 @@ export const ContainerCard = styled.div`
 
 export const Card = styled.div`
     width: 300px;
+    text-align: center;
+    font-size: 2rem;
 
     img {
         width: 100%;
@@ -32,7 +34,6 @@ export const Card = styled.div`
     }
     h1 {
         font-size: 6.4rem;
-        text-align: center;
     }
 `
 

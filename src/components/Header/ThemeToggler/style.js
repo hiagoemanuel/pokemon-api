@@ -24,19 +24,3 @@ export const AcordeonContent = styled.div`
         cursor: pointer;
     }
 `
-
-export const MainTheme = styled.ul`
-    display: flex;
-    gap: 20px;
-
-    li {
-        padding: 12px;
-        border: 5px solid transparent;
-    }
-`
-
-export const PokemonTheme = styled.ul`
-    display: flex;
-    flex-wrap: wrap;
-    gap: 10px;
-`
