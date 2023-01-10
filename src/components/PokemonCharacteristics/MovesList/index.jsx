@@ -4,6 +4,7 @@ import { MainTitle } from '../../../styles/components-style'
 function MovesList({ moves }) {
     if (!moves) return
 
+    if (moves.length === 0) return
     return (
         <Moves>
             <MainTitle><h1>Movimentos</h1></MainTitle>

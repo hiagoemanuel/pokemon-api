@@ -6,6 +6,7 @@ import { setPokemonData } from '../../../services/setPokemonData'
 import { Container, Button } from './style'
 
 let offSet = 0
+let buttonText = <h5>Carregar mais</h5>
 export let pokemonsCardBackup
 
 function ButtonLoadMore() {
@@ -14,6 +15,7 @@ function ButtonLoadMore() {
     async function loadMore() {
         offSet += 10
         const data = await Promise.all(await setPokemonData(offSet))
+
         setPokemonsCard([...pokemonsCard, ...attributedCards(data)])
         pokemonsCardBackup = [...pokemonsCard, ...attributedCards(data)]
     }
@@ -21,7 +23,7 @@ function ButtonLoadMore() {
     return (
         <Container>
             <Button onClick={() => loadMore()}>
-                Carregar mais
+                {buttonText}
             </Button>
         </Container>
     )

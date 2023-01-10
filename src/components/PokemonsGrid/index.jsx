@@ -1,5 +1,3 @@
-import { CardsProvider } from '../../contexts/pokemons-card'
-
 import { ToTopButton } from '../ToTopButton'
 import { PokemonCardsList } from './PokemonCardsList'
 import { ButtonLoadMore } from './ButtonLoadMore'
@@ -11,12 +9,10 @@ function PokemonsGrid() {
         <MainStyle>
             <Phrase>Saiba mais sobre os movimentos e habilidades dos pokémons aqui ;D</Phrase>
             <Title>Pokémons</Title>
-            <CardsProvider>
-                <Cards>
-                    <PokemonCardsList />
-                </Cards>
-                <ButtonLoadMore />
-            </CardsProvider>
+            <Cards>
+                <PokemonCardsList />
+            </Cards>
+            <ButtonLoadMore />
             <ToTopButton />
         </MainStyle>
     )

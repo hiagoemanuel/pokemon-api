@@ -6,10 +6,11 @@ import { MainTitle } from '../../../styles/components-style'
 
 function AbilitiesList({ abilities }) {
     const [ability, setAbility] = useState([])
-
+    
     useEffect(() => {
         async function fetchData() {
             if (!abilities) return
+            if (abilities.length === 0) return
 
             const discriptionResponse = await Promise.all(abilities.map(item => getDiscriptionAbility(item.urlDiscription)))
             const data = discriptionResponse.map((item, index) => {
